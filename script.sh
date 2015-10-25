@@ -18,7 +18,7 @@ sendMail()
     from="cybergod@gonavy"
     to=$currentRecipient
     subject="Halloween gram confirmation"
-    sed 's/NAME//' htmlMessage.html > tmp
+    sed 's/NAME/'$currentName'/' htmlMessage.html > tmp
     message=$(sed 's/RANDOMIMAGE/'$randomImageURL'/' tmp)
 
     (
@@ -36,10 +36,10 @@ sendMail()
 
 
 while read line; do
-    currentRecipient=$line
+    IFS="|" read currentRecipient currentName <<< $line
     sendMail
     count=$((count+1))
-    echo "Sent confirmation to $currentRecipient"
+    echo "Sent confirmation to $currentName at $currentRecipient"
 done < emails
 
 echo "$count messages sent."
