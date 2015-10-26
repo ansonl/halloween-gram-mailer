@@ -17,13 +17,17 @@ sendMail()
 
     from="#CyberGod <GoNavy@USA>"
     to=$currentRecipient
-    subject="Halloween gram confirmation"
-    sed 's/NAME/'$currentName'/' htmlMessage.html > tmp
+    cc1="m163876@usna.edu"
+    cc2="m171500@usna.edu"
+    subject="Halloween gram(s) confirmation"
+    sed 's/NAME/'${currentName// /$(echo -ne '\u00A0')}'/' htmlMessage.html > tmp
     message=$(sed 's/RANDOMIMAGE/'$randomImageURL'/' tmp)
 
     (
     echo "From: $from";
     echo "To: $to";
+    echo "Cc: $cc1";
+    echo "Cc: $cc2";
     echo "Reply-to: m171500@usna.edu";
     echo "Reply-to: m163876@usna.edu";
     echo "Subject: $subject";
