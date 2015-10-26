@@ -15,7 +15,7 @@ sendMail()
 {
     randomImageURL=${randomImages[$(($RANDOM % 9))]}
 
-    from="cybergod@gonavy"
+    from="#CyberGod <GoNavy@USA>"
     to=$currentRecipient
     subject="Halloween gram confirmation"
     sed 's/NAME/'$currentName'/' htmlMessage.html > tmp
