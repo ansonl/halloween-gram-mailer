@@ -1,0 +1,21 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
+
+#ThirdLogoDiv {
+	background-image: url("../3rd_Logo.png");
+	background-size: 100% auto;
+	width: 289px;
+	height: 289px;
+	background-repeat: no-repeat;
+  background-position: center; 
+
+}
+
+#mainContentDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
