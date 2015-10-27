@@ -6,16 +6,40 @@ body {
 #ThirdLogoDiv {
 	background-image: url("../3rd_Logo.png");
 	background-size: 100% auto;
-	width: 289px;
-	height: 289px;
+	width: 128px;
+	height: 128px;
 	background-repeat: no-repeat;
   background-position: center; 
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
 #mainContentDiv {
   position: absolute;
+  width:100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
+}
+
+#PaypalDiv
+{
+  background-image: url("../paypal.png");
+  background-size: 100% auto;
+  width: 389px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+#PaypalMSGDiv
+{
+  background-image: url("../paypalmsg.png");
+  background-size: 100% auto;
+  width: 389px;
+  height:250px;
+  
+  background-repeat: no-repeat;
+  background-position: center; 
 }
