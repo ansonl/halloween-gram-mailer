@@ -1,0 +1,42 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
+
+#ThirdLogoDiv {
+	background-image: url("3rd_Logo.png");
+	background-size: 100% auto;
+	width: 389px;
+	height: 389px;
+	background-repeat: no-repeat;
+  background-position: center; 
+
+}
+
+#mainContentDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#PaypalDiv
+{
+  background-image: url("paypal.png");
+  background-size: 100% auto;
+  width: 389px;
+  height: 389px;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+#PaypalMSGDiv
+{
+  background-image: url("paypalmsg.png");
+  background-size: 100% auto;
+  width: 389px;
+  height:389px;
+  padding: 2em;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
