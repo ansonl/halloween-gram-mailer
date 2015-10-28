@@ -17,40 +17,46 @@
       <div class="col-md-8">
         <div class="well" id="mainContentDiv">
           <div id="ThirdLogoDiv"></div><br>
+
+          <h1 style="text-align:center">Third Company Halloween Grams</h1>
+          <br/>
           <div id="NotesDiv" style="">
             <ul>
               <li>Please remember to include the <strong>receiving Midshipmen
               info and message</strong> with your order!<br>
+
+              <div id="photoDiv" class="row well well-sm">
+		       			<a href="candy-mason.png">
+					      <div class="col-xs-4" id="masonDiv">
+					      </div>
+					      </a>
+					      <a href="treat-bag.png">
+					      <div class="col-xs-4" id="bagDiv">
+					      </div>
+					      </a>
+					      <a href="mini-pumpkin.jpg">
+					      <div class="col-xs-4" id="pumpkinDiv">
+					      </div>
+					      </a>
+		          </div>
+
               <!--<img src="paypal.png" alt="paypal" style="width:304px;height:228px;"> --></li>
               <li>On the payment page, click on <strong>'Add'</strong> and then
               a text box will appear for you to include any personalized
               messages for your mid! :)</li>
               <li style="list-style: none; display: inline">
-                <div id="PaypalDiv"></div>
+                <div id="PaypalDiv" onmouseover="$(this).fadeTo(250,0.5);" onmouseout="$(this).fadeTo(250,1);" onclick="$('html, body').animate({scrollTop: $('#selectionThing').offset().top}, 1000);var origh=$('#selectionThing').height(); var origw=$('#selectionThing').width();$('#selectionThing').focus();$('#selectionThing').stop().animate({height : '50px'}).animate({width : '300px'}).animate({height : origh+20}).animate({width : origw});"></div>
               </li>
               <li>Please write the message you want to include for your
               midshipman. Include company number as well as their class
               year!</li>
               <li style="list-style: none; display: inline">
-                <div id="PaypalMSGDiv"></div>
+                <div id="PaypalMSGDiv" onmouseover="$(this).fadeTo(250,0.5);" onmouseout="$(this).fadeTo(250,1);" onclick="$('html, body').animate({scrollTop: $('#selectionThing').offset().top}, 1000);$('#selectionThing').stop();var origh=$('#selectionThing').height(); var origw=$('#selectionThing').width();$('#selectionThing').focus();$('#selectionThing').stop().animate({height : '40px'}).animate({width : '250px'}).animate({height : origh}).animate({width : origw});"></div>
               </li>
             </ul>
           </div>
 
-          <div id="photoDiv" class="row well well-sm">
-       			<a href="candy-mason.png">
-			      <div class="col-xs-4" id="masonDiv">
-			      </div>
-			      </a>
-			      <a href="treat-bag.png">
-			      <div class="col-xs-4" id="bagDiv">
-			      </div>
-			      </a>
-			      <a href="mini-pumpkin.jpg">
-			      <div class="col-xs-4" id="pumpkinDiv">
-			      </div>
-			      </a>
-          </div>
+          
 
           <div style="text-align: center;">
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post"
@@ -58,8 +64,8 @@
               <input name="cmd" type="hidden" value="_s-xclick"> <input name=
               "hosted_button_id" type="hidden" value="WDW7ZQU8ER95S">
               <input name="on0" style="margin-left:auto;margin-right:auto;"
-              type="hidden" value="Type">Select a Halloween gram<br>
-              <select name="os0">
+              type="hidden" value="Type"><strong>Select a Halloween gram</strong><br>
+              <select id="selectionThing" name="os0">
                 <option value="Candy Mason Jar">
                   Candy Mason Jar $5.00 USD
                 </option>
