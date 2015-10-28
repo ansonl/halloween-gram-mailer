@@ -16,30 +16,70 @@ body {
 }
 
 #mainContentDiv {
-  position: absolute;
-  width:100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  
+}
+
+#photoDiv {
+	text-align: center;
+}
+
+#masonDiv{
+  background-image: url("../candy-mason.png");
+  background-size: 100% auto;
+  width: 30%;
+  max-width: 500px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  margin: 1%;
+}
+
+
+#bagDiv{
+  background-image: url("../treat-bag.png");
+  background-size: 100% auto;
+  width: 30%;
+  max-width: 500px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  margin: 1%;
+}
+
+
+#pumpkinDiv{
+  background-image: url("../mini-pumpkin.jpg");
+  background-size: 100% auto;
+  width: 30%;
+  max-width: 500px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  margin: 1%;
 }
 
 #PaypalDiv
 {
   background-image: url("../paypal.png");
   background-size: 100% auto;
-  width: 389px;
-  height: 350px;
+  width: 100%;
+  max-width: 601px;
+  height: 213px;
   background-repeat: no-repeat;
   background-position: center; 
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #PaypalMSGDiv
 {
   background-image: url("../paypalmsg.png");
   background-size: 100% auto;
-  width: 389px;
-  height:250px;
-  
+  width: 100%;
+  max-width: 519px;
+  height: 163px;
   background-repeat: no-repeat;
   background-position: center; 
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
